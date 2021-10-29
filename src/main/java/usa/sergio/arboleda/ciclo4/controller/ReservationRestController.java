@@ -50,10 +50,8 @@ public class ReservationRestController {
 	public Reservation update(@RequestBody Reservation reservation) {
 		reservationUpdate = null;
 		
-		if (reservation.getIdReservation() == null) {
-			
-			return reservation;
-			
+		if (reservation.getIdReservation() == null) {			
+			return reservation;		
 		} else {
 			reservationUpdate.setIdReservation(reservation.getIdReservation());
 			reservationUpdate.setStartDate(reservation.getStartDate());

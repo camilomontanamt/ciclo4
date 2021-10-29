@@ -45,7 +45,7 @@ public class CategoryRestController {
 	}
 	
 	@PutMapping("/update")
-	@ResponseStatus(HttpStatus.OK)
+	@ResponseStatus(HttpStatus.CREATED)
 	public Category update(@RequestBody Category category) {
 		Category updateCategory = categoryService.findbyId(category.getId());
 		
