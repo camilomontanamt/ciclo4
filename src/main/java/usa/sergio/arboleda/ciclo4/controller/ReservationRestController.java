@@ -46,7 +46,7 @@ public class ReservationRestController {
 	}
 	
 	@PutMapping("/update")
-	@ResponseStatus(HttpStatus.OK)
+	@ResponseStatus(HttpStatus.CREATED)
 	public Reservation update(@RequestBody Reservation reservation) {
 		reservationUpdate = null;
 		

@@ -48,7 +48,7 @@ public class QuadbikeRestController {
 	}
 	
 	@PutMapping("/update")
-	@ResponseStatus(HttpStatus.OK)
+	@ResponseStatus(HttpStatus.CREATED)
 	public Quadbike update(@RequestBody Quadbike quadbike) {
 		Quadbike updateQuadbike = quadbikeService.findbyId(quadbike.getId());
 		

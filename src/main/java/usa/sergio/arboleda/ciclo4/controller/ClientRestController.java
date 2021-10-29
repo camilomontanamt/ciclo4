@@ -44,7 +44,7 @@ public class ClientRestController {
 	}
 	
 	@PutMapping("/update")
-	@ResponseStatus(HttpStatus.OK)
+	@ResponseStatus(HttpStatus.CREATED)
 	public Client update(@RequestBody Client client) {
 		Client updateClient = clientServices.findbyId(client.getIdClient());
 		

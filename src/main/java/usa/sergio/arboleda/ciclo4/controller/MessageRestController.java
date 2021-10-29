@@ -43,7 +43,7 @@ public class MessageRestController {
 	}
 	
 	@PutMapping("/update")
-	@ResponseStatus(HttpStatus.OK)
+	@ResponseStatus(HttpStatus.CREATED)
 	public Message update(@RequestBody Message message) {
 		messageUpdate = null;
 		
